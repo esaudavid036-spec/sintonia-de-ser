@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validación de Certificados</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000000;
+        }
+        header {
+            background: #B57EDC;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .seccion {
+            display: none;
+            padding: 40px;
+        }
+        .visible {
+            display: block;
+        }
+        .card {
+            background: #F4C2C2;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Sintonía de Ser</h2>
+        <nav>
+            <a href="#" onclick="mostrar('inicio')">Inicio</a>
+            <a href="#" onclick="mostrar('certificados')">Certificados</a>
+        </nav>
+    </header><section id="inicio" class="seccion visible">
+    <div class="card">
+        <h2>Bienvenido</h2>
+        <p style="line-height: 2; margin-bottom: 25px;">
+
+Síntonía de Ser busca, a través de los temas que se imparten, dejar semilla de cambio y conocimiento en cada persona que se abra a la nueva información.<br> Impartimos los temas de <strong>Servicio al Cliente</strong> y <strong>Finanzas Personales</strong>.
+
+</p><div style="margin-top: 35px; padding: 20px; background: #f7d6e0; border-radius: 10px;">
+    <h3 style="margin-top: 0;">Sobre la instructora</h3>
+    <p style="line-height: 1.8; margin: 8px 0;"><strong>Nombre:</strong> Leticia Adriana Chavero Alegría</p>
+    <p style="line-height: 1.8; margin: 8px 0;"><strong>Licenciatura en Administración de Empresas</strong><br>Cédula profesional: 2222222</p>
+    <p style="line-height: 1.8; margin: 8px 0;"><strong>Certificación en Coaching Estratégico</strong><br>Universidad de Londres — Número de certificación: 222222</p>
+    <p style="line-height: 1.8; margin: 8px 0;"><strong>Certificación Red Conocer</strong><br>Capacitador externo — Número de certificación: 22222</p>
+</div>
+            <p>Aquí puedes agregar tu foto, tu misión, visión o información del instructor.</p>
+        </div>
+    </section><section id="certificados" class="seccion">
+    <div class="card">
+        <h2>Validación de Certificados</h2>
+        <p>Aquí puedes listar los certificados o agregar botones que lleven a páginas individuales.</p>
+        <ul>
+            <li><a href="certificado_001.html">Certificado 001</a></li>
+            <li><a href="certificado_002.html">Certificado 002</a></li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function mostrar(id) {
+        document.querySelectorAll('.seccion').forEach(sec => sec.classList.remove('visible'));
+        document.getElementById(id).classList.add('visible');
+    }
+</script>
+
+</body>
+</html>
